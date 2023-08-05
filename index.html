@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+   
+  </head>
+<body>
+  <div>
+    <nav>
+      <div class="burger" onclick="toggleMenu()">
+        
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>  
+      </div>
+      <div class="jm">
+      <a href="#home-section"> JM</a>
+       
+      </div>
+      <ul id="nav-links">
+      <li><a href="#skills-section">Skills</a></li>
+      <li><a href="#project-section">Projects</a></li>                                                                              
+      <li><a href="#contact-section">Contact</a></li>                                                                                                                                              
+      <li><a href="#about-section">About</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section id="home-section">
+      <div class="flex-container">
+        <div class="welcome">
+          <div class="one">Welcome to my Website</div> 
+          <div class="two">Hello, I'm Jessie Mark Baronda</div>
+          <div class="three">An IT Student</div>
+          <div class="button">
+            <a href="#skills-section" class="my-button"> START!</a>
+          </div>
+        </div>
+          <div class="image">
+           <img src="img.png" alt="img">
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills-section">
+      <div class="skills">
+        <h1>My Skills</h1>
+        <div class="ide">
+          <div class="icon">
+          <img src="html.png" alt="html" class="size"></a>
+          <span>I have knowledge in HTML, which stands for Hypertext Markup Language. HTML is the foundation of web development and is used to create the structure and content of websites.</span>
+        </div>
+          <div class="icon">
+          <img src="css.png" alt="html" class="size2"></a>
+          <span>I also have knowledge in CSS, which stands for Cascading Style Sheets. CSS is a powerful language used to control the presentation and layout of HTML elements on a web page. With CSS, I can apply styles such as colors, fonts, margins, paddings, and positioning to enhance the visual appearance of a website. </span>
+        </div>
+        <div class="icon">
+          <img src="js.png" alt="html" class="size3"></a>
+          <span>I have some knowledge in JavaScript, a versatile and dynamic programming language often used for web development. JavaScript allows me to add interactivity and functionality to webpages, enabling a more engaging user experience. </span>
+        </div>
+        <div  class="icon">
+          <img src="java.png" alt="html" class="size4"></a>
+          <span>Java is my first programming language that i learned, a versatile programming language that has captured my interest and passion. It provides an excellent foundation for developing a wide range of applications, from web and mobile to desktop and enterprise solutions.</span>
+        </div>
+        <div class="icon">
+          <img src="db.png" alt="html" class="size5"></a>
+          <span>After Java I learned Database, its the backbone of modern data-driven applications, and I find them fascinating for their role in storing, managing, and organizing vast amounts of information. In essence, a database is an organized collection of data that can be easily accessed, managed, and updated.</span>
+        </div>
+        </div>
+        
+
+      </div>
+    </section>
+      <section id="project-section">
+        <div class="top">
+          <h1>My Projects</h1>
+          <div class="projects">
+            <div class="row">
+              <div class="column">
+                <img src="project1.JPG" alt="p1" class="proj">
+                <span>This is my final project from my first year of college, a simple yet effective POS System complete with receipt generation.</span>
+              </div>
+              <div class="column">
+                <img src="project3.JPG" alt="p1" class="proj2">
+                <span>This project is currently in development and is named FlipMatch. The gameplay involves flipping pictures and matching them. I am using Java for the development of this project. As the project progresses, I am continuously learning and improving my skills in Java.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="project5.png" alt="p1" class="proj3">
+                <span>This is my first Portfolio showcasing my skills and projects.</span>
+              </div>
+              <div class="column">
+                <img src="project6.png" alt="p1" class="proj4">
+                <span>This is my first commission, and this project is an exhilarating journey filled with creativity, dedication, and the excitement of turning ideas into reality.</span>
+              </div>
+            </div>
+          </div>
+
+      </section>
+      
+      <section id="contact-section">
+        <div class="contact">
+        <div class="input">
+        <form>
+          <h1>Contact Me</h1>
+          <div class="input2">
+            <input type="text" id="Name" placeholder="Name" required>
+          </div>
+          <div class="input2">
+            <input type="tel" id="contact-number" placeholder="Contact No." required>
+          </div>
+          <div class="input2">
+            <textarea id="message" name="message" placeholder="Message..." required></textarea>
+          </div>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+        <p>------------or------------</p>
+      </div>
+        <div class="social">
+          <div>
+             <a href="https://www.facebook.com/jessiemark.gualinbaronda.7"> <img src="fb.png" alt="Facebook" class="size6"></a>
+          </div>
+          <div>
+              <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmail.png" alt="Gmail" class="size6"></a>
+
+          </div>
+          <div>
+              <a href="https://www.instagram.com/jessiemark06/"> <img src="ins.png" alt="Instagram" class="size6"></a>
+          </div>
+      </div>
+
+    </div>
+
+      </section>
+
+      <section id="about-section">
+        <div class="about">
+        <div>
+          <h1>About Me</h1>
+        </div>
+        <div>
+          My journey in the IT industry has been a thrilling adventure, as I continue to learn and explore new technologies. From web development and programming to database management and cybersecurity, I am continuously honing a diverse set of skills.
+        </div>
+        <br>
+        <div>
+          Throughout this portfolio, you'll find a collection of my projects and personal achievements. Whether you're a potential client, collaborator, or fellow enthusiast, I'm excited to connect with you. Let's bring innovation to life and make a difference together!".
+        </div>
+      </div>
+      </section>
+</body>
+</html>

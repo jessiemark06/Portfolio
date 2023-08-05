@@ -1,0 +1,465 @@
+  body{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  }
+
+
+/* Add styles for the burger menu */
+
+.burger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+.bar {
+  width: 25px;
+  height: 4px;
+  background-color: #000;
+  margin: 6px 0;
+
+}
+
+/* Hide the nav links when the burger menu is shown */
+#nav-links {
+  display: flex;
+  align-items: center; /* Align the links vertically */
+}
+.jm{
+  font-size: 50px;
+  margin-left: 50px;
+  font-weight: bold;
+  float:  left;
+
+
+}
+  .jm:hover {
+    color: rgb(189, 85, 189);
+    cursor: pointer;
+  }
+/* Style the other links to be on the right side */
+li:not(.left-link) {
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: rgb(189, 85, 189);
+}
+
+
+
+
+/* Adjust styles for the burger menu at 768px or smaller */
+@media screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    
+  }
+ 
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 1px solid black;
+
+  }
+
+  #nav-links li {
+    margin: 10px 0; 
+  }
+  .jm{
+    font-size: 30px;
+    text-align: left;
+    margin-right: 20px;
+  }
+  
+}
+
+/* Make the navigation bar stick to the top */
+nav {
+  background-color:white;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+/* Position the links on the right side except for the "JM" link */
+#nav-links {
+  margin-left: auto;
+}
+
+/* Add a minimum width to prevent the links from collapsing on smaller screens */
+li {
+  min-width: 60px;
+}
+
+
+
+
+
+
+  .flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .welcome{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    align-self: flex-start;
+    
+  }
+
+  .one{
+    font-size: clamp(1.875rem, 0.3125rem + 5vw, 3.125rem);
+      color: rgb(189, 85, 189);
+  }
+  .two{
+    font-size: clamp(1rem, -0.0938rem + 3.5vw, 1.875rem);
+    margin-left: 5px;
+  }
+  .three{
+    font-size: clamp(1rem, 0.2969rem + 2.25vw, 1.5625rem);
+    margin-left: 5px;
+  }
+  .button{
+    margin-top: 10px;
+    margin-left: 5px;
+
+
+  }
+  .my-button {
+    font-size: clamp(0.625rem, 0.2344rem + 1.25vw, 0.9375rem);
+    padding : 5px 10px; /* Adjust the padding to create a more button-like shape */
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+    background-color: black;
+    border-radius: 4px; /* Adjust the radius as per your preference */
+    display: inline-block;
+    width: auto; 
+    height: auto; /* Set the height as per your content or a fixed value */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .my-button:hover {
+    color: white;
+    background-color: rgb(189, 85, 189);
+    }
+
+.image img {
+  width: 100%; /* Set the initial width to 100% to fill its parent container */
+  display: flex;
+ 
+}
+
+
+
+
+/* Add media queries to adjust the image size for smaller screens */
+@media screen and (max-width: 768px) {
+  .image img {
+    width: 100%; /* Adjust the width as needed for smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 70%; /* Adjust the width as needed for even smaller screens */ 
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome{
+    margin-top: 2px;
+  }
+  .ide{
+    flex-direction: row;
+  }
+  .icon{
+    width: 190%;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+  }
+  .projects{
+    flex-direction: column;
+  }
+  .column,
+  .column2 {
+    margin-right: 0; /* Remove the margin between columns */
+    margin-bottom: 0;
+  }
+
+  /* Adjust the image sizes for the smaller layout */
+  .proj,
+  .proj2,
+  .proj3,
+  .proj4 {
+    width: 80%;
+    max-width: 100%; /* Use full width of the container */
+    height: auto; /* Allow the height to adjust proportionally */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  }
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set each section to at least viewport height */
+  border-bottom: 1px solid rgb(0, 0, 0);
+  background-color: rgb(244, 224, 185);
+
+}
+
+.size{
+  margin-left: 17px;
+  margin-right: 15px;
+  height: 90px;
+}
+.size2{
+  height: 90px;
+}
+.size3{
+  margin-left: 30px;
+  height: 80px;
+  margin-right: 33px;
+}
+.size4{
+  margin-left: 27px;
+  margin-right: 35px;
+  height: 80px;
+}
+.size5{
+  margin-left:20px;
+  margin-right:28px;
+  height: 75px;
+}
+h1{
+  text-align: center;
+  color:  rgb(189, 85, 189);
+}
+.skills{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ide{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+
+}
+.icon{
+  display: flex;
+  align-items: center;
+  border: 1px solid  rgb(189, 85, 189);
+  font-size: clamp(0.875rem, 0.6406rem + 0.75vw, 1.0625rem);
+}
+
+.top {
+  text-align: center;
+  margin-top: 60px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally within the div */
+  font-size: clamp(0.875rem, 0.6406rem + 0.75vw, 1.0625rem);
+}
+
+.proj,
+.proj2,
+.proj3,
+.proj4 {
+  max-width: 60%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.proj:hover,
+.proj2:hover,
+.proj3:hover,
+.proj4:hover {
+  transform: scale(1.1); /* Increase the size by 10% on hover */
+}
+.proj2{
+ height: 86%;
+}
+.proj3{
+  height: 86%;
+ }
+
+
+.column > span {
+  padding: 0 69px;
+  margin-top: 10px; 
+  text-align: center;
+
+}
+
+@media (max-width: 600px) {
+  .about{
+    width: 90%;
+   }
+  .projects {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+.proj,
+.proj2,
+.proj3,
+.proj4 {
+  max-width: 100%;
+  height: auto;
+}
+.column > span {
+  padding: 0; 
+  text-align: justify;
+}
+.proj:hover,
+.proj2:hover,
+.proj3:hover,
+.proj4:hover {
+  transform:none;
+}
+
+.input2 input[type="text"],
+  .input2 input[type="tel"],
+  .input2 textarea {
+    width: 80%; /* Set the width to 100% for input and textarea inside .input2 div */
+    max-width: 100%; /* Reset max-width to fill the container */
+  }
+ 
+}
+
+
+
+.column img{
+  border: 1px solid rgb(189, 85, 189);
+}
+@media (max-width: 900px){
+  .projects {
+    flex-direction: column;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input{
+  text-align: center;
+  width: 150%; 
+}
+.input2{
+  padding: 5px; 
+  align-items: center;
+  text-align: center;
+}
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  max-width: 500px; /* Set a maximum width if needed */
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+
+
+
+button.submit {
+  background-color:black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+  background-color: rgb(189, 85, 189);
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+
+}
+.size6{
+  width: 35px;
+  height: 35px;
+}
+.about {
+  font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about div {
+  text-align: justify;
+  max-width: 600px; 
+  margin: 0 auto; 
+}
