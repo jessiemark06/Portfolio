@@ -94,6 +94,13 @@ h3 {
   font-size: 1rem;
 }
 
+.timeline-meta {
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
 .location {
   margin-bottom: 12px;
   color: var(--muted);
