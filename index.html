@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <meta name="description" content="Clean and professional personal portfolio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="portfolio">
+    <header class="intro">
+      <img class="profile-photo" src="prof.jpg" alt="Portrait of Your Name">
+
+      <section class="intro-content" aria-labelledby="page-title">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="page-title">Jessie Mark Baronda(Code06)</h2>
+        <p class="role">Full-stack Web Developer</p>
+        <div class="actions" aria-label="Contact links">
+          <a class="button" href="mailto:jmbaronda06@gmail.com">Send Email</a>
+          <a class="button" href="https://github.com/jessiemark06" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/jessie-mark-baronda-596703365/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </header>
+
+    <section class="content-grid">
+      <article class="panel about" id="about">
+        <p class="eyebrow">About Me</p> 
+        <p>
+         I'm a Web Developer focused on building modern, responsive, and user-friendly websites. I enjoy turning ideas into functional web solutions with clean code and intuitive interfaces.
+        </p>
+        <p>
+          My work combines responsive design, efficient development, and attention to detail to create websites that are fast, accessible, and easy to use.
+        </p>
+        <p>
+         I'm continuously improving my skills in front-end and back-end development, UI/UX best practices, and building real-world projects that deliver practical solutions.
+        </p>
+
+        <div class="about-experience" id="experience">
+          <p class="eyebrow">Experience</p>
+         <div class="timeline">
+  <article class="timeline-item">
+    <span>2026</span>
+    <div>
+      <h3>On-the-Job Training</h3>
+      <p>Built a web portal for an NGO, including an accounting module and other information management features while gaining real-world development experience.</p>
+    </div>
+  </article>
+
+  <article class="timeline-item">
+    <span>2025</span>
+    <div>
+      <h3>Capstone Project</h3>
+      <p>Developed a Pet Management System with appointment booking, scheduling, pet records, and status updates.</p>
+    </div>
+  </article>
+
+  <article class="timeline-item">
+    <span>2023</span>
+    <div>
+      <h3>Freelance</h3>
+      <p>Started my freelance journey by working on small web development projects and building practical experience.</p>
+    </div>
+  </article>
+</div>
+        </div>
+      </article>
+
+      <aside class="panel tech-stack" id="tech-stack">
+        <p class="eyebrow">Tech Stack</p>
+        <div class="stack-groups">
+          <article>
+            <h3>Frontend</h3>
+            <div class="tags">
+              <span>HTML</span> 
+              <span>Tailwind CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </article>
+          <article>
+            <h3>Backend</h3>
+            <div class="tags">
+              <span>PHP</span>
+              <span>Laravel</span>
+              <span>C#</span>
+              <span>.NET</span>
+              <span>C++</span>
+              <span>Java</span>
+            </div>
+          </article>
+          <article>
+            <h3>Database & Tools</h3>
+            <div class="tags">
+              <span>MySQL</span>
+              <span>Microsoft SQL </span>
+              <span>XAMPP</span>
+            </div>
+          </article>
+          <article>
+            <h3>Cloud & DevOps</h3>
+            <div class="tags">
+              <span>Azure</span>
+              <span>GitHub</span>
+            </div>
+          </article>
+        </div>
+      </aside>
+    </section>
+
+    <section class="content-grid lower-grid">
+      <article class="panel" id="projects">
+        <p class="eyebrow">Projects</p>
+        <div class="project-list">
+          <article class="project-item">
+            <strong>AuditPal Portal</strong>
+            <span>Web-based audit management system designed to streamline audit tracking, reporting, and record management.</span>
+            <div class="project-actions">
+              <a href="#certificate-portfolio" class="label label-certificate">Certificate</a>
+            </div>
+          </article>
+          <article class="project-item">
+            <strong>Pet Management System</strong>
+            <span>A web-based system for managing pet records, customer information, appointments, and clinic operations efficiently.</span>
+            <div class="project-actions">
+              <a href="#certificate-landing" class="label label-certificate">Certificate</a>
+            </div>
+          </article>
+  
+        </div>
+      </article>
+
+      <article class="panel contact" id="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's work together.</h2>
+        <a href="mailto:jmbaronda06@gmail.com">jmbaronda06@gmail.com</a>
+      </article>
+    </section>
+
+    <div class="lightbox" id="certificate-portfolio" aria-label="Portfolio Website certificate preview">
+      <a class="lightbox-backdrop" href="#projects" aria-label="Close certificate preview"></a>
+      <div class="lightbox-card">
+        <a class="lightbox-close" href="#projects" aria-label="Close certificate preview">&times;</a>
+        <img src="cert1.PNG" alt="Portfolio Website certificate">
+        <p>Certificate of Appreciation</p>
+      </div>
+    </div>
+
+    <div class="lightbox" id="certificate-landing" aria-label="Landing Page certificate preview">
+      <a class="lightbox-backdrop" href="#projects" aria-label="Close certificate preview"></a>
+      <div class="lightbox-card">
+        <a class="lightbox-close" href="#projects" aria-label="Close certificate preview">&times;</a>
+        <img src="cert2.PNG" alt="Landing Page certificate">
+        <p>No Certificate</p>
+      </div>
+    </div>
+ 
+  </main>
+</body>
+</html>
