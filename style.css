@@ -309,7 +309,7 @@ h3 {
   padding: 24px;
 }
 
-.lightbox:target {
+.lightbox.is-open {
   display: grid;
 }
 
@@ -844,6 +844,31 @@ h3 {
   background: #fff;
   border-color: var(--line);
   border-radius: 4px;
+}
+
+.project-context {
+  width: fit-content;
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 4px 9px;
+  color: #28684f;
+  background: #f0f6f2;
+  border: 1px solid #dcebe1;
+  border-radius: 3px;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.project-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-heading > strong {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .inner-page .project-item strong {
